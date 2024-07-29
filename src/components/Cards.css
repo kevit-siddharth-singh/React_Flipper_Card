@@ -1,0 +1,41 @@
+.main-card-container {
+  position: relative;
+  border-radius: 25px;
+}
+.card {
+  border: 1px solid rgba(128, 128, 128, 0.321);
+  cursor: pointer;
+}
+.card:hover {
+  border: 1px solid rgba(128, 128, 128, 0.883);
+  -webkit-box-shadow:0px 0px 141px 30px rgba(114,78,233,1);
+-moz-box-shadow: 0px 0px 141px 30px rgba(114,78,233,1);
+box-shadow: 0px 0px 141px 30px rgba(114,78,233,1);
+
+}
+.card-front {
+ 
+  position: absolute;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  backface-visibility: hidden;
+  z-index: 1;
+  background-image: url("./siddharth.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotateY(0deg);
+}
+.card-back {
+
+  position: absolute;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  backface-visibility: hidden;
+  z-index: 2;
+  transform: rotateY(180deg);
+  background: #724ee9;
+}
+
+.rotate-360 {
+  transform: rotateY(360deg);
+}
